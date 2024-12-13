@@ -1,0 +1,27 @@
+aralin (basic phonetic words)
+1: m
+2: s
+3: a, ma, sa
+4: ang
+5: i, mi, si
+6: o, mo, so
+7: ay
+8: e, me, se
+9: may
+10: u, mu, su
+    ma, me, mi, mo, mu
+    sa, se, si, so, su
+11: b, ba, be, bi, bo, bu
+12: t, ta, te, ti, to, tu
+13: k, ka, ke, ki, ko, ku
+14: l, la, le, li, lo, lu
+15: y, ya, ye, yi, yo, yu
+16: mga
+17: n, na, ne, ni, no, nu
+18: g, ga, ge, gi, go, gu
+19: r, ra, re, ri, ro, ru
+20: p, pa, pe, pi, po, pu
+21: ng
+22: d, da, de, di, do, du
+23: h, ha, he, hi, ho, hu
+24: -ng-

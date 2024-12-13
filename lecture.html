@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aralin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        
+
+        
+        .collapsible {
+            background-color: #f1f1f1;
+            color: #333;
+            cursor: pointer;
+            padding: 10px 15px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s;
+            margin-bottom: 10px;
+        }
+        .collapsible:hover {
+            background-color: #e0e0e0;
+        }
+        .content {
+            display: none;
+            overflow: hidden;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-top: none;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffe4b5;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .letter-box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .letter {
+            background-color: #d09459;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .task {
+            margin-bottom: 20px;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .row img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 4px;
+            border: 2px solid #ddd;
+        }
+        .audio-button {
+            margin-left: auto;
+            padding: 8px 12px;
+            background-color: #d09459;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .audio-button:hover {
+            background-color: #b87544;
+        }
+        @media (max-width: 480px) {
+            .row img {
+                width: 40px;
+                height: 40px;
+            }
+            .audio-button {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- First Aralin Section -->
+    <button class="collapsible" id="aralin1-btn">View Aralin 1: M</button>
+    <div class="content" id="aralin1-content">
+        <div class="container">
+            <div class="header">
+                <h1>Titik M</h1>
+                <p>Pakinggan at basahin.</p>
+                <button class="audio-button" onclick="playAudio('M')">🔊</button>
+            </div>
+            <div class="letter-box">
+                <div class="letter">M</div>
+                <div class="letter">m </div>
+            </div>
+            <div class="task">
+                <div class="row">
+                    <img src="https://via.placeholder.com/50" alt="Image 1">
+                    <span>Maria</span>
+                    <button class="audio-button" onclick="playAudio('maria')">🔊</button>
+                </div>
+                <div class="row">
+                    <img src="https://via.placeholder.com/50" alt="Image 2">
+                    <span>Mapa</span>
+                    <button class="audio-button" onclick="playAudio('mapa')">🔊</button>
+                </div>
+                <div class="row">
+                    <img src="https://via.placeholder.com/50" alt="Image 3">
+                    <span>Mangga</span>
+                    <button class="audio-button" onclick="playAudio('mangga')">🔊</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Aralin Section -->
+    <button class="collapsible" id="aralin2-btn">View Aralin 2: S</button>
+    <div class="content" id="aralin2-content">
+        <div class="container">
+            <div class="header">
+                <h1>Titik S</h1>
+                <p>Pakinggan at basahin.</p>
+                <button class="audio-button" onclick="playAudio('S')">🔊</button>
+            </div>
+            
+            <div class="letter-box">
+                <div class="letter">S</div>
+                <div class="letter">s</div>
+            </div>
+            <div class="task">
+                <div class="row">
+                    <img src="https://via.placeholder.com/50" alt="Image 1">
+                    <span>Saging</span>
+                    <button class="audio-button" onclick="playAudio('saging')">🔊</button>
+                </div>
+                <div class="row">
+                    <img src="https://via.placeholder.com/50" alt="Image 2">
+                    <span>Sapatos</span>
+                    <button class="audio-button" onclick="playAudio('sapatos')">🔊</button>
+                </div>
+                <div class="row">
+                    <img src="https://via.placeholder.com/50" alt="Image 3">
+                    <span>Salamin</span>
+                    <button class="audio-button" onclick="playAudio('salamin')">🔊</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Aralin Section -->
+    <button class="collapsible" id="aralin3-btn">View Aralin 3: Aa, Ma, Sa</button>
+    <div class="content" id="aralin3-content">
+        <div class="container">
+            <div class="header">
+                <h1></h1>
+                <div class="letter-box">
+                    <div class="letter">Aa</div>
+                    <div class="letter">Ma</div>
+                    <div class="letter">Sa</div>
+                </div>
+                <p>Pakinggan at basahin.</p>
+                <button class="audio-button" onclick="playAudio('aa_ma_sa')">🔊</button>
+                <button class="audio-button" onclick="playAudio('aa_ma_sa')">🔊</button>
+                <button class="audio-button" onclick="playAudio('aa_ma_sa')">🔊</button>
+                
+                
+                <p></p>
+                <img src="https://via.placeholder.com/100" style="width: 45%; height: 100%; border-radius: 8px;">
+                <p></p>
+                <button class="audio-button" onclick="playAudio('aa_ma_sa')">🔊</button>
+                
+            </div>
+     
+        
+        <!-- Boxes for the layout -->
+        <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
+            <!-- First box: A a a, Ma ma ma, Sa sa sa -->
+            <div style="background-color: #fce4c4; 
+            border-radius: 8px; 
+            padding: 10px; 
+            width: 45%; 
+            text-align: center; 
+            height: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <img src="https://via.placeholder.com/100" 
+                alt="A a a, Ma ma ma, Sa sa sa" 
+                style="width: 100%; border-radius: 10px;">
+                <button class="audio-button" onclick="playAudio('aasounds')">🔊</button>
+            </div>
+
+            <!-- Second box: Ama, Asa... -->
+            <div style="background-color: #fce4c4; 
+            border-radius: 8px; 
+            padding: 10px; 
+            width: 45%; 
+            text-align: center; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <img src="https://via.placeholder.com/100" 
+                alt="A a a, Ma ma ma, Sa sa sa" 
+                style="width: 100%; border-radius: 10px;">
+                <button class="audio-button" onclick="playAudio('aasounds')">🔊</button>
+            </div>
+        </div>
+    </div>
+</div>
+        
+<!-- Fourth Aralin Section -->
+<button class="collapsible" id="aralin4-btn">View Aralin 4: Ang</button>
+<div class="content" id="aralin4-content">
+    <div class="container">
+        <div class="header">
+            <h1>Salitang Ang</h1>
+            <p>Pakinggan at basahin.</p>
+            <button class="audio-button" onclick="playAudio('Ang')">🔊</button>
+        </div>
+        <div class="letter-box">
+            <div class="letter">Ang</div>
+            <div class="letter">ang</div>
+        </div>
+        <div class="task">
+            <div class="row">
+                <img src="https://via.placeholder.com/50" alt="Image 1">
+                <span>Ang ama</span>
+                <button class="audio-button" onclick="playAudio('ang ama')">🔊</button>
+            </div>
+            <div class="row">
+                <img src="https://via.placeholder.com/50" alt="Image 2">
+                <span>Ang aso</span>
+                <button class="audio-button" onclick="playAudio('ang aso')">🔊</button>
+            </div>
+            <div class="row">
+                <img src="https://via.placeholder.com/50" alt="Image 3">
+                <span>Ang daga</span>
+                <button class="audio-button" onclick="playAudio('ang daga')">🔊</button>
+            </div>
+
+            <div class="center-container">
+                <p></p>
+                <img src="https://via.placeholder.com/100" style="width: 45%; height: auto; border-radius: 8px;">
+                <p></p>
+                <button class="audio-button" onclick="playAudio('aa_ma_sa')">🔊</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+   <!-- Fifth Aralin Section -->
+   <button class="collapsible" id="aralin5-btn">View Aralin 5: Ii, Mi, Si</button>
+   <div class="content" id="aralin5-content">
+       <div class="container">
+           <div class="header">
+               <h1></h1>
+               <div class="letter-box">
+                   <div class="letter">Ii</div>
+                   <div class="letter">Mi</div>
+                   <div class="letter">Si</div>
+               </div>
+           
+            <p>Pakinggan at basahin.</p>
+            <button class="audio-button" onclick="playAudio('aa_ma_sa')">🔊</button>
+            <button class="audio-button" onclick="playAudio('aa_ma_sa')">🔊</button>
+            <button class="audio-button" onclick="playAudio('aa_ma_sa')">🔊</button>
+            
+            
+            <p></p>
+            <img src="https://via.placeholder.com/100" style="width: 45%; height: 100%; border-radius: 8px;">
+            <p></p>
+            <button class="audio-button" onclick="playAudio('aa_ma_sa')">🔊</button>
+           </div>
+    
+       
+       <!-- Boxes for the layout -->
+       <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
+           <!-- First box: A a a, Ma ma ma, Sa sa sa -->
+           <div style="background-color: #fce4c4; 
+           border-radius: 8px; 
+           padding: 10px; 
+           width: 45%; 
+           text-align: center; 
+           height: 100%;
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+               <img src="https://via.placeholder.com/100" 
+               alt="A a a, Ma ma ma, Sa sa sa" 
+               style="width: 100%; border-radius: 10px;">
+               <button class="audio-button" onclick="playAudio('aasounds')">🔊</button>
+           </div>
+
+           <!-- Second box: Ama, Asa... -->
+           <div style="background-color: #fce4c4; 
+           border-radius: 8px; 
+           padding: 10px; 
+           width: 45%; 
+           text-align: center; 
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+               <img src="https://via.placeholder.com/100" 
+               alt="A a a, Ma ma ma, Sa sa sa" 
+               style="width: 100%; border-radius: 10px;">
+               <button class="audio-button" onclick="playAudio('aasounds')">🔊</button>
+           </div>
+       </div>
+   </div>
+</div>
+
+    <script>
+        // Toggle collapsible content
+// Toggle collapsible content
+document.querySelectorAll(".collapsible").forEach(button => {
+    button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+        const isVisible = content.style.display === "block";
+
+        // Show or hide content
+        content.style.display = isVisible ? "none" : "block";
+
+        // Update button text
+        const baseText = button.textContent.replace(/^(View|Hide)/, '').trim(); // Remove "View" or "Hide"
+        button.textContent = isVisible 
+            ? `View ${baseText}` 
+            : `Hide ${baseText}`;
+    });
+});
+
+
+
+        // Play audio functionality
+        function playAudio(word) {
+            const audioMap = {
+                M: 'https://www.example.com/audio/M.mp3',
+                maria: 'https://www.example.com/audio/maria.mp3',
+                mapa: 'https://www.example.com/audio/mapa.mp3',
+                mangga: 'https://www.example.com/audio/mangga.mp3',
+                saging: 'https://www.example.com/audio/saging.mp3',
+                sapatos: 'https://www.example.com/audio/sapatos.mp3',
+                salamin: 'https://www.example.com/audio/salamin.mp3'
+            };
+
+            const audioUrl = audioMap[word];
+            if (audioUrl) {
+                const audio = new Audio(audioUrl);
+                audio.play();
+            } else {
+                alert('Audio not found for ' + word);
+            }
+        }
+    </script>
+</body>
+</html>
